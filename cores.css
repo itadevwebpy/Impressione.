@@ -1,0 +1,10 @@
+:root {
+    /* Paleta principal */
+    --cor-fundo: #011929;   /* Fundo principal */
+    --cor-secundaria: #003E78; /* Cabeçalhos, menus, cards */
+    --cor-destaque: #FF2154;   /* Botões, links, chamadas de ação */
+  
+    /* Cores adicionais úteis */
+    --cor-texto-claro: #ffffff;
+    --cor-texto-escuro: #1a1a1a;
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Impressione</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <img src="LOGO-IMPRESSIONE.png">
+            <button> <i class="bi bi-menu-down"></i><span>menu</span></button>
+        </div>
+    </header>
+
+    <h2 style="text-align: center; margin-top: 20px; color: aliceblue; font-size: 15pt;">Crachás Autismo Impressione</h2>
+
+    
+    <div class="cracha-container">
+      <form class="cracha-form">
+        <label for="nome">Nome da Criança:</label>
+        <input type="text" name="nome" required placeholder="Ex: José Saulo">
+    
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" name="nascimento" required>
+    
+        <label for="cid">CID (Ex: F84.0):</label>
+        <input type="text" name="cid" required>
+    
+        <div class="responsavel-fixo">
+          <label>Nome do Pai:</label>
+          <input type="text" name="pai" placeholder="Nome do pai">
+          <label>Telefone do Pai:</label>
+          <input type="tel" name="telpai" placeholder="(99) 9 9999-9999">
+    
+          <label>Nome da Mãe:</label>
+          <input type="text" name="mae" placeholder="Nome da mãe">
+          <label>Telefone da Mãe:</label>
+          <input type="tel" name="telmae" placeholder="(99) 9 9999-9999">
+        </div>
+    
+        <div class="responsavel-wrapper">
+          <!-- Outros responsáveis serão adicionados aqui -->
+        </div>
+    
+        <button type="button" onclick="addResponsavel()">Adicionar outro responsável</button>
+    
+        <label for="cordao">Deseja cordão personalizado?</label>
+        <select name="cordao" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+    
+        <button type="button" onclick="enviarWhatsapp(this)">Enviar para o WhatsApp</button>
+      </form>
+    </div>
+
+    <div style="width: 100vh; height: 100px;" class="ajuste"></div>
+
+    
+
+
+    <footer>
+        <ul id="ulmenu">
+            <li><a href="index.html"><i class="bi bi-house"></i><span>Inicio</span></a></li>
+            <li><a href="sobre.html"><i class="bi bi-person-lines-fill"></i><span>Crachás</span></a></li>
+            <li><a href="catalogos.html"><i class="bi bi-card-image"></i><span>Catálogo</span></a></li>
+            <li><a href="contato.html"><i class="bi bi-command"></i><span>Gráfica</span></a></li>
+            <li onclick="OcultaMenu()"><a href="#"><i class="bi bi-whatsapp"></i><span>Contatos</span></a></li>
+        </ul>
+
+        <ul id="uloculto" style="display: none;">
+            <li><a href="index.html"><i class="bi bi-envelope-at"></i><span>E-Mail</span></a></li>
+            <li><a href="sobre.html"><i class="bi bi-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="https://wa.me/5599984087831" target="_blank"><i class="bi bi-whatsapp"></i><span>Malharia</span></a></li>
+            <li><a href="https://wa.me/559984091637" target="_blank"><i class="bi bi-whatsapp"></i><span>Gráfica</span></a></li>
+            <li onclick="mostraMenu()"><a href="#"><i class="bi bi-arrow-down-up"></i><span>menu</span></a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

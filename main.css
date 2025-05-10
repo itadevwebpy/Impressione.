@@ -1,0 +1,97 @@
+.tela-inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#local:hover{
+    text-shadow: 0 0 12px #b983ff, 0 0 22px #b983ff, 0 0 32px #b983ff;
+
+
+}
+
+.tela-inicial .index-img img{
+    max-width: 100%;
+    height: auto;
+    margin-top: -18px;
+}
+
+.tela-inicial h1{
+    margin-top: 22px;
+    color: var(--cor-texto-claro);
+    font-size: 12pt;
+    text-align: center;
+}
+
+.index-txt{
+    background-color: rgba(0, 0, 0, 0.13);
+    padding:0 12px;
+    border-radius: 12px;
+    margin-top: -5px;
+}
+
+.tela-inicial .index-txt p{
+    color: var(--cor-texto-claro);
+    font-size: 10pt;
+    text-align: center;
+    margin: 6px;
+}
+
+
+.bannerpubli{
+    max-width: 100vh;
+    margin: 0 auto;
+
+}
+
+.bannerpubli img{
+    width: 100%;
+    margin-top: -8px;
+    border-radius: 12px;
+
+
+}
+
+
+.cracha-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #eef3ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .cracha-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  
+  .cracha-form input,
+  .cracha-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .cracha-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cracha-form button:nth-of-type(1) {
+    background-color: #0561ee;
+    margin-bottom: 10px;
+  }
+  

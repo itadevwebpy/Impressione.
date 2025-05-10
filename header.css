@@ -1,0 +1,39 @@
+
+.containerHeader{
+    display: flex;
+    justify-content:  space-between;
+    margin: 12px auto;
+    max-width: 100vh;
+    box-shadow: 0px 0px 10px rgba(3, 0, 0, 0.521);    
+    padding: 12px 12px;
+    border-radius: 12px;
+
+
+}
+
+.containerHeader img{
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.containerHeader button{
+    display: grid;
+    width: 100px;
+    height: auto;
+    color: white;
+    background-color: var(--cor-fundo);
+    border: none;
+    font-size: 20pt;
+    text-transform: uppercase;
+    transition: text-shadow 0.4s ease;
+    cursor: pointer;
+}
+.containerHeader button:hover{
+    text-shadow: 0 0 12px #b983ff, 0 0 22px #b983ff, 0 0 32px #b983ff;
+}
+
+.containerHeader span{
+    font-size: 9pt;
+}
